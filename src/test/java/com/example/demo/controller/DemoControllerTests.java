@@ -12,6 +12,10 @@ public class DemoControllerTests {
     private DemoController demoController;
     @Test
     void testGetHello() {
-       assertEquals("Hello, World!", demoController.getHello());
+       assertEquals("Hello, World", demoController.getHello());
+    }
+    @Test
+    void testGetGoodbye() {
+        assertEquals("Goodbye, World", demoController.getGoodbye());
     }
 }
